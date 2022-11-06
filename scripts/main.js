@@ -8,8 +8,9 @@
 */
 
 
-import {world} from "mojang-minecraft";
-import {ModalFormData} from "mojang-minecraft-ui";
+import { world, system } from "@minecraft/server"
+system.events.beforeWatchdogTerminate.subscribe(e => e.cancel = true)
+import {ModalFormData} from "@minecraft/server-ui";
 
 const overworld = world.getDimension("overworld");
 let openUi = new Map();
