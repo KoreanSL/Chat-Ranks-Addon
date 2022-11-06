@@ -3,15 +3,15 @@
 	"header": {
 		"name": "Chat ranks Addon",
 		"description": "by SL",
-		"uuid": "15c16c42-f6d1-11ec-b939-0242ac120002",
-		"version": [
-			2,
-			0,
-			0
-		],
 		"min_engine_version": [
 			1,
-			19,
+			18,
+			0
+		],
+		"uuid": "15c16c42-f6d1-11ec-b939-0242ac120002",
+		"version": [
+			3,
+			1,
 			0
 		]
 	},
@@ -20,32 +20,48 @@
 			"description": "Data Module",
 			"type": "data",
 			"uuid": "15c1707a-f6d1-11ec-b939-0242ac120002",
-			"version": [2, 0, 0]
+			"version": [
+				3,
+				1,
+				0
+			]
 		},
 		{
-			"description": "JavaScript module code",
+			"description": "Gametest Module",
 			"language": "javascript",
 			"type": "script",
-			"uuid": "27f86b56-26ba-4855-99b1-e51371522519",
-			"version": [0, 0, 1],
+			"uuid": "c7dde11a-8b04-42a3-a771-8cf6d8e211cc",
+			"version": [
+				1,
+				1,
+				0
+			],
 			"entry": "scripts/main.js"
 		}
 	],
+	"capabilities": [
+		"script_eval"
+	],
 	"dependencies": [
 		{
-			"description": "mojang-minecraft module",
-			"uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616",
+			"module_name": "@minecraft/server",
 			"version": "1.0.0-beta"
 		},
 		{
-			"description": "mojang-gametest module",
-			"uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616",
+			"module_name": "@minecraft/server-gametest",
 			"version": "1.0.0-beta"
 		},
 		{
-			"description": "mojang-minecraft-ui module",
-			"uuid": "2BD50A27-AB5F-4F40-A596-3641627C635E",
+			"module_name": "@minecraft/server-ui",
 			"version": "1.0.0-beta"
+		},
+		{
+			"version": [
+				1,
+				0,
+				0
+			],
+			"uuid": "86951ce0-538b-11ed-bdc3-0242ac120002"
 		}
 	],
 	"metadata": {
